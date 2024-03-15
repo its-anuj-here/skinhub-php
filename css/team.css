@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+/* design one 
+
+.container
+{
+    width:400px;
+ } 
+
+ */
+
+/* design two
+
+ .container
+ {
+     width: 100%;
+ } */
+
+/* 
+ design 3
+ 
+ .container{
+    width:400px
+ } 
+ 
+ */
+
+.home {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e9e9e9;
+}
+
+.home .creators h3 {
+  font-size: 5rem;
+  letter-spacing: 1px;
+  position: relative;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.home .creators p {
+  padding: 10px 20px;
+  margin-top: 20px;
+  width: 400px;
+  font-size: 15px;
+  line-height: 1.3;
+  word-break: break-all;
+}
+/* .home h3::before
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: "Creators";
+    top: 0;
+} */
+
+.home span {
+  color: #3abbbf;
+  font-weight: bold;
+}
+
+.home .creators .hire-us {
+  padding: 15px 35px;
+  margin: 20px;
+  background: #8d7ba5;
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.container {
+  display: flex;
+  position: relative;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  /* width: 100%; */
+  /* overflow: hidden; */
+}
+
+.card {
+  width: 250px;
+  height: 250px;
+  clip-path: polygon(50% 100%, 0 0, 100% 0);
+  margin: 0 -60px;
+  overflow: hidden;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.card:hover img {
+  transform: scale(1.3);
+  transition: 0.3s;
+}
+
+.card:nth-child(2) {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

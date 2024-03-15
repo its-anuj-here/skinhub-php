@@ -1,0 +1,195 @@
+:root{
+    --primary-color:#7A6DE3;
+    --font-color:rgb(26, 26, 26);
+}
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+//-----------------------
+// NAVBAR STYLING
+// ----------------------
+
+.underline{
+    border-radius: 3px;
+    height: 5px;
+    // background-color: var(--primary-color);
+//     background: rgb(192,0,255);
+// background: linear-gradient(90deg, rgba(192,0,255,1) 0%, rgba(243,0,255,0.16880255520176823) 74%);
+background: rgb(192,0,255);
+background: linear-gradient(90deg, rgba(192,0,255,1) 0%, rgba(122,109,227,1) 83%);
+}
+
+.navbar{
+    display: flex;
+    background-color: #343047;
+    align-items: center;
+    justify-content: space-evenly;
+    border-bottom: 5px solid #1e003a;
+    height: 70px;
+}
+
+
+.logo{
+    width: 30vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .company{
+
+        width:170px
+    }
+}
+
+.links{
+    text-transform: capitalize;
+    width: 50vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    &:nth-child(n){
+        a{
+            color :#B9BDDC;
+            font-size: 20px;
+        }
+        transition: width 1s linear 1s;
+    }
+}
+
+.cart-login{
+    width: 25vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    .cart{
+        width: 30px;
+        .underline{
+            width: 0%;
+        }
+        &:hover{
+            .underline{
+                width: 120%;
+            }
+        }
+    }
+    .btn-login{
+        border-radius: 3px;
+        height:35px;
+        padding:0px 15px;
+        border: 0px solid transparent;
+        background: rgb(192,0,255);
+        background: linear-gradient(270deg, rgb(144, 0, 192) 0%, rgb(105, 87, 240) 73%);
+        font-family:'Outfit', sans-serif;
+        color: #dbdbdb;
+    }
+    //FAS FOR PROFILE AND CART
+    .fas{
+        font-size: 25px;
+        color: #dce0ff;
+        .underline{
+            width: 0%;
+        }
+        &:hover{
+            .underline{
+                width: 100%;
+            }
+        }
+
+    }
+}
+
+
+
+.companyname{
+    text-transform: capitalize;
+    font-size: 35px;
+}
+
+
+// --------------------------
+// SEARCH BAR CSS
+// --------------------------
+.input-field{
+    height: 50px;
+    border-radius: 5px 0px 0px 5px;
+    background: transparent;
+    outline: none;
+    border: none;
+    font-size: 19px;
+    padding-left: 5px;
+    transition: all 400ms ease;
+    &::placeholder{
+        color: #202020;
+        font-size: 17px;
+        font-family: 'Roboto', sans-serif;
+    }
+    &:focus{
+        outline:invert;
+    }
+}
+.search{
+    display: flex;
+    .search-bar{
+        height: 30px;
+        background-color:#d3d3d3;
+        color: #2c2c2c;
+    }
+    .btn-search{
+        width: 50px;
+        cursor: pointer;
+        border-radius:0px 5px 5px 0px;
+        transition: all 300ms ease;
+        border: 0px solid transparent;
+        background-color: #5e16bd;
+        background-image: linear-gradient(
+        90deg
+        , #501aa8,#870de8);
+        &:hover{
+            background-color: #5e16bd;
+        }
+    }
+    //FAS FOR SERACH ICON
+    .fas{
+        font-size: 15px;
+        color: #e6e8ff;
+    }
+}
+
+// --------------------------
+// SLIDESHOW CSS
+// --------------------------
+
+
+.slideshow{
+    position: relative;
+    .fas{
+        position: absolute;
+        color: rgb(34, 34, 34);
+        font-size: 90px;
+        cursor: pointer;
+    }
+
+    .fa-caret-left{
+        left :10px;
+        top: 180px;
+    }
+    .fa-caret-right{
+        right: 10px;
+        top: 180px;
+    }
+    .images{
+        width: 100vw;
+        display: flex;
+        .image{
+            transition:all 2s ease;
+            display: none;
+            width: 100vw;
+        }
+    }
+}
